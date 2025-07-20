@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1E3A8A; /* Dark blue */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #1E40AF; /* Medium blue */
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 20px;
+}
+
+.bg-blue-900 {
+    background-color: #1E3A8A; /* Dark blue */
+}
+
+.bg-gray-100 {
+    background-color: #F3F4F6; /* Light gray */
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-gray-900 {
+    color: #1F2937; /* Dark gray */
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.max-w-xl {
+    max-width: 36rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.gap-12 {
+    gap: 3rem;
+}
+
+.md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.font-bold {
+    font-weight: bold;
+}

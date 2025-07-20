@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FinComply Advisors - Comprehensive Financial Compliance Services" />
+    <title>Services | FinComply Advisors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <!-- Include the new logo -->
+                <span class="w-48">
+                    <!-- Copy the SVG code from components/logo.html -->
+                    <svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="60"
+                            font-family="Georgia, serif"
+                            font-size="72"
+                            fill="#0A2151"
+                            font-weight="800">Fin</text>
+                        <text x="110" y="60"
+                            font-family="Georgia, serif"
+                            font-size="72"
+                            fill="#B91C1C"
+                            font-weight="800">Comply</text>
+                    </svg>
+                </span>
+            </a>
+            <div class="hidden md:flex space-x-10">
+                <a href="index.html" class="text-gray-800 hover:text-[#B91C1C] transition">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-[#B91C1C] transition">About</a>
+                <a href="services.html" class="text-[#B91C1C] font-semibold">Services</a>
+                <a href="contact.html" class="text-gray-800 hover:text-[#B91C1C] transition">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="login.html" class="text-gray-800 hover:text-[#B91C1C] transition">Login</a>
+                <a href="signup.html" class="bg-[#B91C1C] text-white px-4 py-2 rounded-md hover:bg-[#9B1C1C] transition">Sign Up</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden">
+        <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+        <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
+        <a href="services.html" class="block px-4 py-2 text-sm text-[#B91C1C] font-semibold hover:bg-gray-100">Services</a>
+        <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        <a href="login.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
+        <a href="signup.html" class="block px-4 py-2 text-sm text-white bg-[#B91C1C] rounded-md hover:bg-[#9B1C1C]">Sign Up</a>
+    </div>
+
+    <!-- Services Header -->
+    <header class="pt-32 pb-16 bg-[#1E3A8A] text-white">
+        <div class="container mx-auto max-w-6xl px-6">
+            <h1 class="text-4xl font-bold mb-4">Our Services</h1>
+            <p class="text-lg opacity-90">Comprehensive compliance and risk management solutions</p>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="container mx-auto max-w-6xl px-6 py-16">
+        <div class="grid gap-12 md:grid-cols-2">
+            <!-- Regulatory Compliance -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-[#1E3A8A] mb-4">Regulatory Compliance</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>FCA Authorization Support</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>AML/KYC Framework Development</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Compliance Training Programs</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Risk Management -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-[#1E3A8A] mb-4">Risk Management</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Enterprise Risk Assessment</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Internal Controls Design</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Crisis Response Planning</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Data Protection -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-[#1E3A8A] mb-4">Data Protection</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>GDPR Compliance</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Privacy Program Development</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Data Security Audits</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Crisis Management -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-[#1E3A8A] mb-4">Crisis Management</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Incident Response</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Stakeholder Communications</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-[#B91C1C] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Recovery Planning</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1E3A8A] text-white py-8">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <!-- Include the new logo -->
+                        <span class="w-48">
+                            <!-- Copy the SVG code from components/logo.html -->
+                            <svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="60"
+                                    font-family="Georgia, serif"
+                                    font-size="72"
+                                    fill="#0A2151"
+                                    font-weight="800">Fin</text>
+                                <text x="110" y="60"
+                                    font-family="Georgia, serif"
+                                    font-size="72"
+                                    fill="#B91C1C"
+                                    font-weight="800">Comply</text>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-10">
+                    <a href="index.html" class="text-white hover:text-[#B91C1C] transition">Home</a>
+                    <a href="about.html" class="text-white hover:text-[#B91C1C] transition">About</a>
+                    <a href="services.html" class="text-[#B91C1C] font-semibold">Services</a>
+                    <a href="contact.html" class="text-white hover:text-[#B91C1C] transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-white pt-4">
+                <p class="text-center text-sm opacity-90">&copy; 2023 FinComply Advisors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
